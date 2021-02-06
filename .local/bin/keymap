@@ -1,0 +1,16 @@
+#!/bin/sh
+
+CL=$(setxkbmap -print |
+	awk -F"+" '/xkb_symbols/ {print $2}')
+
+if [ $CL = "us" ]
+then
+	setxkbmap lt
+    xmodmap ~/.config/.Xmodmapcaps
+    xmodmap -e 'clear lock'
+elif [ $CL = "lt" ]
+then
+	setxkbmap us
+    xmodmap ~/.config/.Xmodmapcaps
+    xmodmap -e 'clear lock'
+fi

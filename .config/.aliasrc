@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# nav
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# pacman
+alias pacsyu='sudo pacman -Syyu'
+alias pacs='sudo pacman -S'
+alias pacrns='sudo pacman -Rns'
+
+# ls
+
+alias ls='exa -al --color=always --group-directories-first'
+alias la='exa -a --color=always --group-directories-first'
+alias ll='exa -l --color=always --group-directories-first'
+alias lt='exa -aT --color=always --group-directories-first'
+alias l.='exa -a | grep "^\."'
+
+# grep UwU
+alias grep='grep --color=auto'
+
+# random flags
+alias cp="cp -i"
+alias df="df -h"
+
+# yt-dl
+alias yta-best="youtube-dl --extract-audio --audio-format best"
+alias yta-mp3="youtube-dl --extract-audio --audio-format mp3"
+alias ytv-best="youtube-dl -f bestvideo+bestaudio"
+
+# copy file to clipboard
+alias cpclip="xclip -sel c < "
+
+# devour
+alias sxiv="devour sxiv"
+alias mpv="devour mpv"
+alias vlc="devour vlc"
+alias pdf="devour zathura"

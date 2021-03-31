@@ -1,0 +1,5 @@
+#! /bin/bash
+
+[[ -f ~/.config/.Xmodmap ]] && xmodmap ~/.config/.Xmodmapcaps
+
+xmodmap -e 'clear lock' & 

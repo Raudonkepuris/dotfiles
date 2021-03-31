@@ -1,0 +1,19 @@
+#!/bin/sh
+
+X220="https://www.skelbiu.lt/skelbimai/?autocompleted=1&keywords=x220&submit_bn=&cost_min=&cost_max=&condition=&cities=0&distance=0&mainCity=0&search=1&category_id=4&type=0&user_type=0&ad_since_min=0&ad_since_max=0&visited_page=1&orderBy=0&detailsSearch=0"
+
+X220Ebay="https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=thinkpad+x220&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=thinkpad+x200"
+
+T420="https://www.skelbiu.lt/skelbimai/?autocompleted=1&keywords=t420&submit_bn=&cost_min=&cost_max=&condition=&cities=0&distance=0&mainCity=0&search=1&category_id=4&type=0&user_type=0&ad_since_min=0&ad_since_max=0&visited_page=1&orderBy=0&detailsSearch=0"
+
+T420Ebay="https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=thinkpad+t420&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=thinkpad+x420"
+
+T430="https://www.skelbiu.lt/skelbimai/?autocompleted=1&keywords=t430&submit_bn=&cost_min=&cost_max=&condition=&cities=0&distance=0&mainCity=0&search=1&category_id=4&type=0&user_type=0&ad_since_min=0&ad_since_max=0&visited_page=1&orderBy=0&detailsSearch=0"
+
+T430Ebay="https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=thinkpad+t430&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=thinkpad+t420"
+
+M50X="https://www.skelbiu.lt/skelbimai/?autocompleted=1&keywords=audio+technica+ath+m50x&submit_bn=&cities=0&distance=0&mainCity=0&search=1&category_id=0&type=0&user_type=0&ad_since_min=0&ad_since_max=0&visited_page=&detailsSearch=0"
+
+M50XEbay="https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=audio+technica+m50x&_sacat=0&LH_TitleDesc=0&_sop=15&_osacat=0&_odkw=thinkpad+t430"
+
+firefox $M50X $M50XEbay $X220 $X220Ebay $T420 $T420Ebay $T430 $T430Ebay

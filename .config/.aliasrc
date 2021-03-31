@@ -37,3 +37,6 @@ alias sxiv="devour sxiv"
 alias mpv="devour mpv"
 alias vlc="devour vlc"
 alias pdf="devour zathura"
+
+#record screen
+alias recordscreen="ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0 myvideo_$(date +%d_%B_%Y_%H:%M).mkv"

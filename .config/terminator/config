@@ -1,0 +1,65 @@
+[global_config]
+	suppress_multiple_term_dialog = True
+	title_transmit_fg_color = "#E9E9F4"
+	title_transmit_bg_color = "#3A3C4E"
+	title_inactive_fg_color = "#E9E9F4"
+	title_inactive_bg_color = "#282936"
+[keybindings]
+	zoom_in = "None"
+	zoom_out = "None"
+	zoom_normal = "None"
+	new_tab = <CTRL><SHIFT>A
+	cycle_next = <CTRL>Tab
+	cycle_prev = <CTRL><Shift>Tab
+	go_prev = "None"
+	go_up = <CTRL>K
+	go_down = <CTRL>J
+	go_left = <CTRL>H
+	go_right = <CTRL>L
+	split_horiz = <CTRL>S
+	split_vert = <CTRL>D
+	close_term = <CTRL>X
+	copy = <CTRL><Shift>C 
+	paste = <CTRL><Shift>V
+	toggle_scrollbar = "None"
+	search = <CTRL>F
+	close_window = "None"
+	resize_up = <CTRL><SHIFT>K
+	resigo_down = <CTRL><SHIFT>J
+	resigo_left = <CTRL><SHIFT>H
+	resigo_right = <CTRL><SHIFT>L
+	move_tab_right = "None"
+	move_tab_left = "None"
+	toggle_zoom = "None"
+	scaled_zoom = "None"
+	next_tab = "None"
+	prev_tab = "None"
+	switch_to_tab_1 = <CTRL>1
+	switch_to_tab_2 = <CTRL>2
+	switch_to_tab_3 = <CTRL>3
+	switch_to_tab_4 = <CTRL>4
+	switch_to_tab_5 = <CTRL>5
+	switch_to_tab_6 = <CTRL>6
+	switch_to_tab_7 = <CTRL>7
+	switch_to_tab_8 = <CTRL>8
+	switch_to_tab_9 = <CTRL>9
+	switch_to_tab_0 = <CTRL>0
+	full_screen = "None"
+	reset = <CTRL>R 
+	reset_clear = <CTRL><Shift>R
+	hide_window = "None"
+	group_all = <CTRL>G
+	ungroup_all = <CTRL><Shift>G
+	group_tab = <CTRL>V
+	ungroup_tab = <CTRL><Shift>V
+	new_window = "None"
+	new_terminator = "None"
+[layouts]
+[plugins]
+[profiles]
+	[[default]]
+		cursor_shape = ibeam
+		background_color = "#282a36"
+		font = Mononoki Nerd Font 13
+		foreground_color = "#b7b7b7"
+		palette = "#282a36:#ff5555:#50fa7b:#f1fa8c:#6272a4:#bd93f9:#8be9fd:#94969F"

@@ -1,0 +1,48 @@
+scrolling:
+  history: 10000
+
+font:
+  normal:
+    family: "Mononoki Nerd Font"
+  bold:
+    family: "Mononoki Nerd Font"
+  italic:
+    family: "Mononoki Nerd Font"
+  bold_italic:
+    family: "Mononoki Nerd Font"
+
+  size: 12.0
+
+colors:
+  primary:
+    background: '#282A36'
+    foreground: '#94969F'
+
+  normal:
+    black:   '#282a36'
+    red:     '#ff5555'
+    green:   '#50fa7b'
+    yellow:  '#f1fa8c'
+    blue:    '#6272a4'
+    magenta: '#bd93f9'
+    cyan:    '#8be9fd'
+    white:   '#94969F'
+
+#background_opacity: 1.0
+
+cursor:
+  style: "Block"
+
+  vi_mode_style: "Beam"
+
+live_config_reload: true
+
+mouse:
+  #hide_when_typing: false
+
+  url:
+    launcher:
+      program: firefox 
+      args: []
+
+    #modifiers: None

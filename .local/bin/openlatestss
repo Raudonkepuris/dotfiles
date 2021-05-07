@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ss=$(ls -t $HOME/Pictures/Screenshots | head -n 1)
+
+sxiv $HOME/Pictures/Screenshots/$ss

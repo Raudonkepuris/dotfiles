@@ -1,0 +1,33 @@
+img{
+  width: 15px;
+  padding: 0px 5px 0px 0px;
+}
+
+.column{
+  float: left;
+  width: 25%;
+}
+
+iframe{
+  display: block;
+  margin:20px auto;
+  width:408px;
+  height:40px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a{
+  font-size: 23px;
+  text-decoration: none;
+  color: #AFAFB7;
+}
+
+p{
+  font-size: 30px;
+  color: #e9e9f4;
+}

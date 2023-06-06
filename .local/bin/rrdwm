@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /home/liut/.local/bin/dwm
+sudo make install 
+loginctl kill-user liut

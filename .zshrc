@@ -1,6 +1,6 @@
 pfetch
 
-export PATH=$PATH:/home/liut/.local/bin
+export PATH=$PATH:$HOME/.local/bin
 export BROWSER=firefox
 
 autoload -U colors && colors

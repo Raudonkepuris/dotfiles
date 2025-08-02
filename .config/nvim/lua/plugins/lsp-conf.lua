@@ -13,7 +13,8 @@ return {
 		},
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "ts_ls" },
+				ensure_installed = { "lua_ls", "ts_ls", "clangd", "bashls" },
+				automatic_enable = true
 			})
 		end,
 	},
@@ -27,6 +28,12 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.ts_ls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.clangd.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.bashls.setup({
 				capabilities = capabilities,
 			})
 			vim.keymap.set("n", "gh", vim.lsp.buf.hover, {})

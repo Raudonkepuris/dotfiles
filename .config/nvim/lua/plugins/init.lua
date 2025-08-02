@@ -10,6 +10,7 @@ function module.setup()
 		{ import = "plugins.lsp-conf" },
 		{ import = "plugins.none-ls" },
 		{ import = "plugins.comp" },
+		{ import = "plugins.navigator" },
 	})
 end
 

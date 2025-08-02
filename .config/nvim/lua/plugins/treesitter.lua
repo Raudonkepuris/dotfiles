@@ -4,14 +4,14 @@ return {
 	branch = 'main',
 	build = ':TSUpdate',
 	config = function()
-		vim.opt.foldtext = ""
+	  vim.opt.foldtext = ""
 	  vim.opt.foldcolumn = "0"
 	  vim.opt.foldlevelstart = 99
 	  vim.opt.foldmethod = "expr"
 	  vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 	
 	  require("nvim-treesitter").install({
-			"typescript",
+		 "typescript",
 	    "tsx",
 	    "jsx",
 	    "javascript",
@@ -24,6 +24,9 @@ return {
 	    "sql",
 	    "scss",
 	    "html",
+		 "c",
+		 "cpp",
+		 "bash",
 	  })
 	end
 }

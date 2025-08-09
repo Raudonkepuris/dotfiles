@@ -8,7 +8,7 @@ return {
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
 		},
-		build = "make install_jsregexp"
+		build = "make install_jsregexp",
 	},
 	{
 		"hrsh7th/nvim-cmp",
@@ -34,7 +34,7 @@ return {
 					["<CR>"] = cmp.mapping.confirm({ select = true }),
 				}),
 				sources = cmp.config.sources({
-					-- { name = "nvim_lsp" },
+					{ name = "nvim_lsp" },
 					{ name = "luasnip" },
 				}, {
 					{ name = "buffer" },

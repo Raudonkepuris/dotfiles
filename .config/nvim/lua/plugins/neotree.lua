@@ -15,15 +15,15 @@ return {
 	---@type neotree.Config?
 	opts = {
 		-- add options here
-  filesystem = {
-	 filtered_items = {
-		visible = true,
-      hide_dotfiles = false,
-      hide_hidden = false
-	 }
-  }
+		filesystem = {
+			filtered_items = {
+				visible = true,
+				hide_dotfiles = false,
+				hide_hidden = false,
+			},
+		},
 	},
 	config = function()
-		vim.keymap.set('n', '<C-z>', ':Neotree toggle<CR>', { silent = true })
-	end
+		vim.keymap.set("n", "<C-z>", ":Neotree toggle<CR>", { silent = true })
+	end,
 }

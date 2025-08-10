@@ -1,0 +1,9 @@
+[window]
+opacity = 0.9
+
+[font]
+normal = { family = "Mononoki NerdFont", style = "Regular" }
+bold = { family = "Mononoki NerdFont", style = "Bold" }
+italic = { family = "Mononoki NerdFont", style = "Italic" }
+bold_italic = { family = "Mononoki NerdFont", style = "Bold Italic" }
+size = 7

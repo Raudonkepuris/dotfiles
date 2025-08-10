@@ -11,6 +11,7 @@ function module.setup()
 		{ import = "plugins.none-ls" },
 		{ import = "plugins.comp" },
 		{ import = "plugins.navigator" },
+		{ import = "plugins.bufferline" },
 	})
 end
 

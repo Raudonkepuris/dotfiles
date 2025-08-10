@@ -1,8 +1,5 @@
 pfetch
 
-export PATH=$PATH:$HOME/.local/bin:$HOME/.dotnet/tools
-export BROWSER=firefox
-
 autoload -U colors && colors
 PROMPT="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
@@ -17,3 +14,7 @@ compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 source ~/.local/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

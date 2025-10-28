@@ -12,6 +12,8 @@ function module.setup()
 		{ import = "plugins.comp" },
 		{ import = "plugins.navigator" },
 		{ import = "plugins.bufferline" },
+		{ import = "plugins.dap" },
+		{ import = "plugins.lazydev" },
 	})
 end
 

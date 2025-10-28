@@ -8,7 +8,7 @@ return {
 			options = {
 				diagnostics = "nvim_lsp",
 				--separator_style = "slant" | "slope" | "thick" | "thin"
-			}
+			},
 		})
 		vim.keymap.set("n", "<leader>n", ":bn<cr>")
 		vim.keymap.set("n", "<leader>p", ":bp<cr>")

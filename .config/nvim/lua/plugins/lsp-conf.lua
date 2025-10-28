@@ -23,34 +23,19 @@ return {
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.ts_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.eslint.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.clangd.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.bashls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.omnisharp.setup({
-				capabilities = capabilities,
-				cmd = { "omnisharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
-			})
+			vim.lsp.config("lua_ls", {})
+			vim.lsp.config("ts_ls", {})
+			vim.lsp.config("eslint", {})
+			vim.lsp.config("clangd", {})
+			vim.lsp.config("bashls", {})
+			vim.lsp.config("omnisharp", {})
+
 			vim.keymap.set("n", "gh", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gb", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "gG", vim.lsp.buf.code_action, {})
 			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {})
 			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
-		   vim.keymap.set("n", "gl", vim.diagnostic.open_float, {})
-			vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {})
-			vim.keymap.set("n", "]d", vim.diagnostic.goto_next, {})
+			vim.keymap.set("n", "gl", vim.diagnostic.open_float, {})
 		end,
 	},
 }

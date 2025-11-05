@@ -4,7 +4,7 @@ vim.opt.shiftwidth = 2
 vim.opt.relativenumber = true
 vim.g.mapleader = "<"
 vim.diagnostic.config({
-  virtual_lines = true,
+  virtual_lines = false,
 })
 
 vim.keymap.set("n", "<leader>cd", ":cd %:p:h<CR>:pwd<CR>", { desc = "cd to current file's directory" })

@@ -14,6 +14,7 @@ function module.setup()
 		{ import = "plugins.bufferline" },
 		{ import = "plugins.dap" },
 		{ import = "plugins.lazydev" },
+		{ import = "plugins.obsession" },
 	})
 end
 

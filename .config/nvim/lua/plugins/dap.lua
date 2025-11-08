@@ -24,6 +24,20 @@ return {
 				cwd = "${workspaceFolder}",
 				stopAtBeginningOfMainSubprogram = false,
 			},
+			{
+				name = "Launch with arguments",
+				type = "gdb",
+				request = "launch",
+				program = function()
+					return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+				end,
+				args = function()
+					local input = vim.fn.input("Program arguments: ")
+					return vim.split(input, " ", { trimempty = true })
+				end,
+				cwd = "${workspaceFolder}",
+				stopAtBeginningOfMainSubprogram = false,
+			},
 		}
 		dap.configurations.cpp = dap.configurations.c
 

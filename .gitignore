@@ -1,9 +1,12 @@
 *
-!.config/nvim
-!.config/alacritty
-!.local/zsh-syntax-highlighting
+!.config/
+!.local/
+!.config/nvim/**
+!.config/alacritty/**
+!.local/zsh-syntax-highlighting/**
 !.tmux.conf
 !.xprofile
 !.zprofile
 !.zshrc
 !.gitignore
+

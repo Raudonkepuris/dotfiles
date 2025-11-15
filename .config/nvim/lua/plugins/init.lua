@@ -15,6 +15,7 @@ function module.setup()
 		{ import = "plugins.dap" },
 		{ import = "plugins.lazydev" },
 		{ import = "plugins.obsession" },
+		{ import = "plugins.easy-dotnet" },
 	})
 end
 

@@ -13,7 +13,7 @@ return {
 		},
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "ts_ls", "eslint", "clangd", "bashls", "omnisharp" },
+				ensure_installed = { "lua_ls", "ts_ls", "eslint", "clangd", "bashls" },
 				automatic_enable = true,
 			})
 		end,
@@ -28,7 +28,6 @@ return {
 			vim.lsp.config("eslint", {})
 			vim.lsp.config("clangd", {})
 			vim.lsp.config("bashls", {})
-			vim.lsp.config("omnisharp", {})
 
 			vim.keymap.set("n", "gh", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gb", vim.lsp.buf.definition, {})

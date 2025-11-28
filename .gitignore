@@ -3,6 +3,7 @@
 !.local/
 !.config/nvim/**
 !.config/alacritty/**
+!.config/ly/**
 !.local/zsh-syntax-highlighting/**
 !.tmux.conf
 !.xprofile

@@ -1,0 +1,31 @@
+Xcursor.theme: redglass
+
+*.normbgcolor: #282A36
+*.normfgcolor: #F8F8F2
+*.normbordercolor: #44475A
+*.selbgcolor: #6272A4
+*.selfgcolor: #FCFCFA
+*.selbordercolor: #6272A4
+*.selhighlightfgcolor: #FAFAF6
+*.selhighlightbgcolor: #4C5A85
+*.normhighlightfgcolor: #FAFAF6
+*.normhighlightbgcolor: #7A88B3
+
+*.background: #282a36
+*.foreground: #f8f8f2
+*.color0:	  #21222c
+*.color1:     #ff5555
+*.color2:     #50fa7b
+*.color3:     #f1fa8c
+*.color4:     #bd93f9
+*.color5:     #ff79c6
+*.color6:     #8be9fd
+*.color7:     #bbbbbb
+*.color8:     #44475a
+*.color9:     #ff6e6e
+*.color10:    #69ff94
+*.color11:    #ffffa5
+*.color12:    #d6acff
+*.color13:    #ff92df
+*.color14:    #a4ffff
+*.color15:    #ffffff

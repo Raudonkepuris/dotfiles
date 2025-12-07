@@ -1,0 +1,37 @@
+#!/bin/sh
+
+get_brightness() {
+    brightnessctl -m | sed -n 's/.*,\([0-9]\+\)%,.*/\1/p'
+}
+
+change_brightness() {
+    case "$DIR" in
+        1)	brightnessctl set "${CHANGE}%-"
+            ;;
+        2)	brightnessctl set "${CHANGE}%+"
+            ;;
+    esac
+}
+
+CHANGE=0
+BRIGHTNESS=0
+DIR="$1"
+
+if [ "$DIR" -eq 1 ] || [ "$DIR" -eq 2 ]; then
+  BRIGHTNESS=$(get_brightness)
+
+  if [ "$BRIGHTNESS" -le 1 ] && [ "$DIR" -eq 1 ]; then
+	CHANGE=0
+  elif [ "$BRIGHTNESS" -le 5 ] && [ "$DIR" -eq 1 ]; then
+	CHANGE=1
+  elif [ "$BRIGHTNESS" -lt 5 ] && [ "$DIR" -eq 2 ]; then
+	CHANGE=1
+  else
+	CHANGE=5
+  fi
+
+  change_brightness
+
+  BRIGHTNESS=$(get_brightness)
+  dunstify -h string:x-dunst-stack-tag:brightness -h int:value:"$BRIGHTNESS" "Brightness: $BRIGHTNESS"
+fi

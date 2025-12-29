@@ -34,3 +34,5 @@ elif [ "$ACTION" -ge 1 ] && [ "$ACTION" -le 2 ] && \
 
     notify_vol
 fi
+
+kill -42 $(pidof dwmblocks)

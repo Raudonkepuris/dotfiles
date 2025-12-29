@@ -31,4 +31,5 @@ fi
 dunst &
 dwmblocks &
 feh --bg-fill .local/share/backgrounds/dracula-cat.png &
+udiskie &
 dwm

@@ -6,8 +6,11 @@
 !.Xresources
 !.zprofile
 !.zshrczshrc
-!.config/
 !.local/
+!.local/share
+!.local/share/scripts
+!.local/share/scripts/**
+!.config/
 !.config/nvim
 !.config/nvim/**
 !.config/ncpamixer.conf

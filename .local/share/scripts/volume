@@ -28,8 +28,8 @@ elif [ "$ACTION" -ge 1 ] && [ "$ACTION" -le 2 ] && \
     pamixer --unmute
 
     case "$ACTION" in
-        1) pamixer -d "$AMOUNT" ;;
-        2) pamixer -i "$AMOUNT" ;;
+        1) pamixer --allow-boost --set-limit 150 -d "$AMOUNT" ;;
+        2) pamixer --allow-boost --set-limit 150 -i "$AMOUNT" ;;
     esac
 
     notify_vol
